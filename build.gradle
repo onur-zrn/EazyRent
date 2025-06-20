@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.onur'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.hibernate.orm:hibernate-core:6.6.13.Final'
+    implementation 'org.postgresql:postgresql:42.7.5'
+
+    compileOnly 'org.projectlombok:lombok:1.18.38'
+    annotationProcessor 'org.projectlombok:lombok:1.18.38'
+
+}
